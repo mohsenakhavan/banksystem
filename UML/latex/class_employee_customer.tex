@@ -1,0 +1,142 @@
+\doxysection{Employee\+Customer Class Reference}
+\hypertarget{class_employee_customer}{}\label{class_employee_customer}\index{EmployeeCustomer@{EmployeeCustomer}}
+Inheritance diagram for Employee\+Customer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_employee_customer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_employee_customer_a0c5a1efb9baf3b07fcabb7e8fd145ae3}\label{class_employee_customer_a0c5a1efb9baf3b07fcabb7e8fd145ae3} 
+{\bfseries Employee\+Customer} (string u, string p, string n, string s, string a, double b=0.\+0)
+\item 
+\Hypertarget{class_employee_customer_a4393d36b48d4e6147b9ba1e92f79d6f1}\label{class_employee_customer_a4393d36b48d4e6147b9ba1e92f79d6f1} 
+void {\bfseries deposit} (double amount)
+\item 
+\Hypertarget{class_employee_customer_aa20a833a8af3a832a31c8ddbecf2353f}\label{class_employee_customer_aa20a833a8af3a832a31c8ddbecf2353f} 
+void {\bfseries withdraw} (double amount)
+\item 
+\Hypertarget{class_employee_customer_a49cdb021555e484846ce6b2bc816ff95}\label{class_employee_customer_a49cdb021555e484846ce6b2bc816ff95} 
+void {\bfseries transfer} (\mbox{\hyperlink{class_customer}{Customer}} \&recipient, double amount, vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \&customers)
+\item 
+\Hypertarget{class_employee_customer_a2b38d1c9f1356c27dba49e906e73c535}\label{class_employee_customer_a2b38d1c9f1356c27dba49e906e73c535} 
+void {\bfseries view\+Transaction\+Log} ()
+\item 
+\Hypertarget{class_employee_customer_ad2dbe08e40d94f0bcef76c79364c3d18}\label{class_employee_customer_ad2dbe08e40d94f0bcef76c79364c3d18} 
+void {\bfseries block\+Customer} (\mbox{\hyperlink{class_customer}{Customer}} \&customer)
+\item 
+\Hypertarget{class_employee_customer_abebbec2f47a8981ef7508b89ae2681ac}\label{class_employee_customer_abebbec2f47a8981ef7508b89ae2681ac} 
+void {\bfseries unblock\+Customer} (\mbox{\hyperlink{class_customer}{Customer}} \&customer)
+\item 
+\Hypertarget{class_employee_customer_a5bcff8b382e8f3650e95e6f378445352}\label{class_employee_customer_a5bcff8b382e8f3650e95e6f378445352} 
+void {\bfseries view\+Top\+NCustomers} (const vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \&customers, int n)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_customer}{Customer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Customer} (string u, string p, string n, string s, string a, double b=0.\+0, string r="{}"{})
+\item 
+void {\bfseries deposit} (double amount, vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \&customers)
+\item 
+void {\bfseries withdraw} (double amount)
+\item 
+void {\bfseries transfer} (\mbox{\hyperlink{class_customer}{Customer}} \&recipient, double amount, vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \&customers)
+\item 
+void {\bfseries log\+Transaction} (const string \&operation, double amount, const string \&source, const string \&destination="{}"{})
+\item 
+void {\bfseries view\+Balance} ()
+\item 
+int {\bfseries get\+Transaction\+Count} () const
+\item 
+void {\bfseries block\+Customer} (const string \&username)
+\item 
+void {\bfseries unblock\+Customer} (const string \&username)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries User} (string u, string p, string n, string s, string a, double b=0.\+0)
+\item 
+virtual void {\bfseries register\+User} ()
+\item 
+bool {\bfseries is\+Block} () const
+\item 
+void {\bfseries block} ()
+\item 
+void {\bfseries unblock} ()
+\item 
+virtual bool {\bfseries login} (const string \&u, const string \&p)
+\item 
+void {\bfseries view\+Profile} ()
+\item 
+string {\bfseries get\+Username} () const
+\item 
+string {\bfseries get\+Password} () const
+\item 
+string {\bfseries get\+Name} () const
+\item 
+string {\bfseries get\+Surname} () const
+\item 
+string {\bfseries get\+Address} () const
+\item 
+double {\bfseries get\+Balance} () const
+\item 
+void {\bfseries set\+Username} (const string \&u)
+\item 
+void {\bfseries set\+Password} (const string \&p)
+\item 
+void {\bfseries set\+Name} (const string \&n)
+\item 
+void {\bfseries set\+Surname} (const string \&s)
+\item 
+void {\bfseries set\+Address} (const string \&a)
+\item 
+void {\bfseries set\+Balance} (double b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_employee}{Employee}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Employee} (string u, string p, string n, string s, string a)
+\item 
+void {\bfseries view\+Customers} (const vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \&customers)
+\item 
+void {\bfseries view\+Top\+NCustomers} (const vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \&customers, int n)
+\item 
+void {\bfseries edit\+Profile} (\mbox{\hyperlink{class_customer}{Customer}} \&customer)
+\item 
+void {\bfseries block\+Customer} (\mbox{\hyperlink{class_customer}{Customer}} \&customer)
+\item 
+void {\bfseries unblock\+Customer} (\mbox{\hyperlink{class_customer}{Customer}} \&customer)
+\item 
+void {\bfseries view\+Transaction\+Log} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_customer}{Customer}}}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ {\bfseries customers}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries username}
+\item 
+string {\bfseries password}
+\item 
+string {\bfseries name}
+\item 
+string {\bfseries surname}
+\item 
+string {\bfseries address}
+\item 
+double {\bfseries balance}
+\item 
+bool {\bfseries is\+Blocked}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bank.\+cpp\end{DoxyCompactItemize}

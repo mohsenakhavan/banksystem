@@ -1,0 +1,84 @@
+\doxysection{Admin Class Reference}
+\hypertarget{class_admin}{}\label{class_admin}\index{Admin@{Admin}}
+Inheritance diagram for Admin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_admin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_admin_a7885da3cda7b82e062010294cefb5f86}\label{class_admin_a7885da3cda7b82e062010294cefb5f86} 
+{\bfseries Admin} (string u, string p, string n, string s, string a)
+\item 
+\Hypertarget{class_admin_a8701aa2d80b111c8194f86b6ef16ce35}\label{class_admin_a8701aa2d80b111c8194f86b6ef16ce35} 
+void {\bfseries give\+Random\+Gifts} (vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \&customers)
+\item 
+\Hypertarget{class_admin_a3e9966e8c1ad235afe1d8410a9678ff1}\label{class_admin_a3e9966e8c1ad235afe1d8410a9678ff1} 
+void {\bfseries delete\+User} (vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \&customers, const string \&username)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries User} (string u, string p, string n, string s, string a, double b=0.\+0)
+\item 
+virtual void {\bfseries register\+User} ()
+\item 
+bool {\bfseries is\+Block} () const
+\item 
+void {\bfseries block} ()
+\item 
+void {\bfseries unblock} ()
+\item 
+virtual bool {\bfseries login} (const string \&u, const string \&p)
+\item 
+void {\bfseries view\+Profile} ()
+\item 
+string {\bfseries get\+Username} () const
+\item 
+string {\bfseries get\+Password} () const
+\item 
+string {\bfseries get\+Name} () const
+\item 
+string {\bfseries get\+Surname} () const
+\item 
+string {\bfseries get\+Address} () const
+\item 
+double {\bfseries get\+Balance} () const
+\item 
+void {\bfseries set\+Username} (const string \&u)
+\item 
+void {\bfseries set\+Password} (const string \&p)
+\item 
+void {\bfseries set\+Name} (const string \&n)
+\item 
+void {\bfseries set\+Surname} (const string \&s)
+\item 
+void {\bfseries set\+Address} (const string \&a)
+\item 
+void {\bfseries set\+Balance} (double b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries username}
+\item 
+string {\bfseries password}
+\item 
+string {\bfseries name}
+\item 
+string {\bfseries surname}
+\item 
+string {\bfseries address}
+\item 
+double {\bfseries balance}
+\item 
+bool {\bfseries is\+Blocked}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bank.\+cpp\end{DoxyCompactItemize}

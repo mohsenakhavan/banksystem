@@ -1,0 +1,96 @@
+\doxysection{Employee Class Reference}
+\hypertarget{class_employee}{}\label{class_employee}\index{Employee@{Employee}}
+Inheritance diagram for Employee\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_employee}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_employee_a6d6d7306b89edcdf90923d4a30dfd4b1}\label{class_employee_a6d6d7306b89edcdf90923d4a30dfd4b1} 
+{\bfseries Employee} (string u, string p, string n, string s, string a)
+\item 
+\Hypertarget{class_employee_a49ad58a5de875c1527fdba14534dfb9c}\label{class_employee_a49ad58a5de875c1527fdba14534dfb9c} 
+void {\bfseries view\+Customers} (const vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \&customers)
+\item 
+\Hypertarget{class_employee_a6a922e065e72e4e1957ea035290e8503}\label{class_employee_a6a922e065e72e4e1957ea035290e8503} 
+void {\bfseries view\+Top\+NCustomers} (const vector$<$ \mbox{\hyperlink{class_customer}{Customer}} $>$ \&customers, int n)
+\item 
+\Hypertarget{class_employee_a8631a94e011b0fedc5a9b75a1315fcbf}\label{class_employee_a8631a94e011b0fedc5a9b75a1315fcbf} 
+void {\bfseries edit\+Profile} (\mbox{\hyperlink{class_customer}{Customer}} \&customer)
+\item 
+\Hypertarget{class_employee_ae0b2b0448c4cf84512084aff57856760}\label{class_employee_ae0b2b0448c4cf84512084aff57856760} 
+void {\bfseries block\+Customer} (\mbox{\hyperlink{class_customer}{Customer}} \&customer)
+\item 
+\Hypertarget{class_employee_a75677ac45a4a8a8ddc8f3b91a424bf5e}\label{class_employee_a75677ac45a4a8a8ddc8f3b91a424bf5e} 
+void {\bfseries unblock\+Customer} (\mbox{\hyperlink{class_customer}{Customer}} \&customer)
+\item 
+\Hypertarget{class_employee_a6139f04b9c8856eecd10728785a0af7d}\label{class_employee_a6139f04b9c8856eecd10728785a0af7d} 
+void {\bfseries view\+Transaction\+Log} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries User} (string u, string p, string n, string s, string a, double b=0.\+0)
+\item 
+virtual void {\bfseries register\+User} ()
+\item 
+bool {\bfseries is\+Block} () const
+\item 
+void {\bfseries block} ()
+\item 
+void {\bfseries unblock} ()
+\item 
+virtual bool {\bfseries login} (const string \&u, const string \&p)
+\item 
+void {\bfseries view\+Profile} ()
+\item 
+string {\bfseries get\+Username} () const
+\item 
+string {\bfseries get\+Password} () const
+\item 
+string {\bfseries get\+Name} () const
+\item 
+string {\bfseries get\+Surname} () const
+\item 
+string {\bfseries get\+Address} () const
+\item 
+double {\bfseries get\+Balance} () const
+\item 
+void {\bfseries set\+Username} (const string \&u)
+\item 
+void {\bfseries set\+Password} (const string \&p)
+\item 
+void {\bfseries set\+Name} (const string \&n)
+\item 
+void {\bfseries set\+Surname} (const string \&s)
+\item 
+void {\bfseries set\+Address} (const string \&a)
+\item 
+void {\bfseries set\+Balance} (double b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries username}
+\item 
+string {\bfseries password}
+\item 
+string {\bfseries name}
+\item 
+string {\bfseries surname}
+\item 
+string {\bfseries address}
+\item 
+double {\bfseries balance}
+\item 
+bool {\bfseries is\+Blocked}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bank.\+cpp\end{DoxyCompactItemize}
